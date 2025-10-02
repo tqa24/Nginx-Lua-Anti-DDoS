@@ -68,6 +68,8 @@ fi
 %changelog
 * Sat Sep 20 2025 C0nw0nk <C0nw0nk@github> - 2.4-1
 - Range filter will now work with content-type fix set to false.
+* Sat Sep 20 2025 C0nw0nk <C0nw0nk@github> - 2.4-1
+- Range filter will now work with content-type fix set to false.
 * Sat Sep 20 2025 C0nw0nk <C0nw0nk@github> - 2.3-1
 - GET content-type function ability to toggle on / off via true / false statement
 - Default content-type function to true so users can turn it off if they need to
