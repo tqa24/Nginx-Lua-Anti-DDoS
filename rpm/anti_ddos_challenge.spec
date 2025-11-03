@@ -77,6 +77,17 @@ fi
 - localized_global.credits = 2 --disable ddos credits
 - ';
 - }
+* Mon Nov 03 2025 C0nw0nk <C0nw0nk@github> - 2.8-1
+- Added feature ability for script settings to be controlled from nginx configuration file nginx.conf or vhosts useful for those who do not want to edit the script but can instead use their vhosts virtual hosts or nginx config files to change settings of the script.
+- https://github.com/C0nw0nk/Nginx-Lua-Anti-DDoS/wiki/Script-Overrides
+- Example: nginx.conf inside the http block
+- http {
+- init_by_lua '
+- localized_global = {} --define global var that script can read
+- localized_global.secret = " enigma" --nginx config now sets secret key and the script will use the secret key from here
+- localized_global.credits = 2 --disable ddos credits
+- ';
+- }
 * Fri Oct 24 2025 C0nw0nk <C0nw0nk@github> - 2.7-1
 - Performance improvement and fixes for Tor .onion checks javascript authentication puzzle now shows and protects backends for Tor users.
 - Added support to detect if Linux, Windows or Mac for custom commands.
