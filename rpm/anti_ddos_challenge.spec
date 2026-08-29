@@ -90,6 +90,12 @@ fi
 - Added Feature Content Caching do not extend cache ttl on Status HIT or to extend cache ttl on Status HIT
 - Adjust JS Puzzle IP Flood protection to not be so strict
 - Added info on memcached server since memcached servers do not support milliseconds on TTL's
+* Sat Aug 29 2026 C0nw0nk <C0nw0nk@github> - 4.1-1
+- Added Feature to have banned IPs flooding get their bans extended
+- Added Feature IP tracking in rate limit window is not extended on each request or to have IP rate extended
+- Added Feature Content Caching do not extend cache ttl on Status HIT or to extend cache ttl on Status HIT
+- Adjust JS Puzzle IP Flood protection to not be so strict
+- Added info on memcached server since memcached servers do not support milliseconds on TTL's
 * Tue Aug 18 2026 C0nw0nk <C0nw0nk@github> - 4.0-1
 - Added feature: protection from excessive log writing DoS when blocked IPs are less than the limit. For example, the default limit is 100 IPs. If 100 IPs attack you and fill up the block list, logging is turned off to prevent CPU consumption. When the blocklist is empty or has fewer than 100 IPs, a single IP could essentially spam and cause Nginx to use up CPU writing logs; this resolves that issue.
 - Add True Client IP for the Emby web server.
